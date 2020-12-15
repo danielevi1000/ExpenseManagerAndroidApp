@@ -1,5 +1,7 @@
 # ExpenseManagerAndroidApp
 
+Hybrid android application using Java, HTML5, CSS3 & jQuery Mobile.
+
 ![Screenshot_1608015376](https://user-images.githubusercontent.com/74924818/102187624-e57ed380-3ebc-11eb-967d-07caa7f5254c.png)
 
 ![Screenshot_1608015389](https://user-images.githubusercontent.com/74924818/102187784-1d861680-3ebd-11eb-9180-ab8517d9b82d.png)
