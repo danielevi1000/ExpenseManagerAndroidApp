@@ -1,6 +1,6 @@
 # ExpenseManagerAndroidApp
 
-![Screenshot_1608015376](https://user-images.githubusercontent.com/74924818/102186634-9a17f580-3ebb-11eb-8c9f-79c80aa37506.png)
+![Screenshot_1608015376](https://user-images.githubusercontent.com/74924818/102187624-e57ed380-3ebc-11eb-967d-07caa7f5254c.png)
 
 ![Screenshot_1608015389](https://user-images.githubusercontent.com/74924818/102186667-a00dd680-3ebb-11eb-8317-6e11acb7777d.png)
 
