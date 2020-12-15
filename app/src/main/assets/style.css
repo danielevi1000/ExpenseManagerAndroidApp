@@ -1,0 +1,75 @@
+<style>
+    @-ms-viewport {
+        width: 100vw ;
+        zoom: 100% ;
+    }
+
+    @viewport {
+        width: 100vw ;
+        zoom: 100% ;
+    }
+
+    @-ms-viewport {
+        user-zoom: fixed ;
+    }
+
+
+    @viewport {
+        user-zoom: fixed ;
+    }
+
+    li:nth-child(odd):not(.ui-li-divider), li:nth-child(odd):not(.ui-li-divider) a {
+        background: #F5F5F5 !important;
+        text-shadow: none;
+    }
+
+    li:nth-child(odd):not(.ui-li-divider) a:hover {
+        background: #999 !important;
+        text-shadow: none;
+    }
+
+    #red, #green {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 15px;
+        margin: auto;
+        height: 120px;
+        width: 120px;
+    }
+
+    .right-pos {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        border: 0;
+    }
+
+    .ui-grid-a a {
+        float: left;
+    }
+
+    .ui-block-b {
+        margin: 12px 0px;
+    }
+
+    .ui-grid-a > .ui-block-a {
+        width: 88%;
+    }
+
+    .ui-grid-a > .ui-block-b {
+        width: 12%;
+    }
+
+    .ui-icon-graph:after {
+        background-image: url("images/graph.svg");
+    }
+
+    .ui-nosvg .ui-icon-graph:after {
+        background-image: url("images/graph.svg");
+    }
+
+</style>

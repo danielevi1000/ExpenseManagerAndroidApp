@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http_code.jquery.com_mobile_1.4.5_jquery.mobile-1.4.5.css"/>
+    <script src="http_code.jquery.com_jquery-1.11.1.js"></script>
+    <script src="http_code.jquery.com_mobile_1.4.5_jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="alertify.min.css"/>
+    <script src="alertify.min.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<div data-role="page" id="list_transactions" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h1 class="ui-title" role="heading">New Transaction</h1>
+        <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+            <a target="_blank" href="list_transactions.html" data-role="button" data-icon="bars"
+               data-iconpos="notext" data-theme="b"></a>
+            <a target="_blank" href="chart.html" data-role="button" data-icon="graph"
+               data-iconpos="notext" data-theme="b"></a>
+        </div>
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+            <a target="_blank" href="home.html" data-role="button" data-icon="home"
+               data-iconpos="notext" data-theme="b"></a>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>
+            *Type Transaction
+            <select name="type" id="type" onchange="typeChange()">
+                <option value="Expense">Expense</option>
+                <option value="Income">Income</option>
+            </select>
+            *Category
+            <select name="category" id="category">
+                <option value="" selected disabled hidden>Select a category</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Food">Food</option>
+                <option value="Health Care">Health Care</option>
+                <option value="Housing">Housing</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Other">Other</option>
+            </select>
+            Details
+            <input type="text" name="details" id="details" maxlength="24"/>
+            *Amount
+            <input type="number" name="amount" id="amount" step=0.01 required/>
+            *Month
+            <select name="month" id="month" required>
+                <option value="" selected disabled hidden>Select a month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <br>
+            <a href="javascript:getTransaction()" data-role="button"
+               data-icon="plus" data-theme="b">Add
+                Transaction</a>
+            <strong>* Required field</strong>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http_code.jquery.com_mobile_1.4.5_jquery.mobile-1.4.5.css"/>
+    <script src="http_code.jquery.com_jquery-1.11.1.js"></script>
+    <script src="http_code.jquery.com_mobile_1.4.5_jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="alertify.min.css"/>
+    <script src="alertify.min.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div data-role="page" id="list_transactions" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h1 class="ui-title" role="heading">Transactions</h1>
+        <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+            <a target="_blank" href="add_transaction.html" data-role="button" data-icon="plus"
+               data-iconpos="notext" data-theme="b"></a>
+            <a target="_blank" href="chart.html" data-role="button" data-icon="graph"
+               data-iconpos="notext" data-theme="b"></a>
+        </div>
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+            <a target="_blank" href="home.html" data-role="button" data-icon="home"
+               data-iconpos="notext" data-theme="b"></a>
+        </div>
+        <script>
+            var expenses = window.vm.sumExpenses("Entertainment") + window.vm.sumExpenses("Food")
+                + window.vm.sumExpenses("Health Care") + window.vm.sumExpenses("Housing") + window.vm.sumExpenses("Clothing")
+                + window.vm.sumExpenses("Transportation") + window.vm.sumExpenses("Other");
+            var incomes = window.vm.sumIncomes();
+            var saving = incomes - expenses;
+            document.write("<p style='font-size:18px;'><strong>&nbsp; Expenses: " + expenses + "&nbsp; Incomes: "
+                + incomes + "&nbsp; Saving: " + saving + "</strong></p>");
+
+        </script>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <div data-role="fieldcontain">
+                    <input type="number" name="transactionid" id="transactionid"
+                           placeholder="Insert transaction # to delete" data-inline="true">
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <a href="javascript:deleteTransaction()"
+                   data-role="button" data-icon="delete" data-iconpos="notext" data-theme="b"
+                   data-inline="true"></a>
+            </div>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content" id="listTable"></div>
+    <script>
+        var transactions = window.vm.getAllTransactions();
+        document.write(transactions)
+
+    </script>
+</div>
+</body>
+</html>
